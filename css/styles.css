@@ -105,7 +105,24 @@ img {
 
 
 
+/* css af Abd */
+/* index */
+.infobar{
+    background: #F2771B;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
 
+.infobar p{
+    color: white;
+    font-weight: 800;
+    font-size: 14px;
+}
 
 @media screen and (min-width: 768px) {
 
