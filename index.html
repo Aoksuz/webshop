@@ -60,6 +60,7 @@
         <a class="cart-icon" href="kurv.html"><i data-feather="shopping-bag"></i></a>
     </div>
 </nav>
+
     <div class="infobar wrapper">
         <p>Klarna: Bestil i dag, Betal senere</p>
         <p>Fri fragt på alle ordrer over 799 kr.</p>
@@ -73,6 +74,30 @@
             <div class="carousel-cell slide slide3"></div>
         </div>
     </section>
+
+    <article class="article wrapper">
+        <div class="indhold kvinder">
+            <div class="articlecontainer kvindebox"></div>
+            <div class="articletxt">
+                <h1>Kvinder</h1>
+                <h4>Sommerens udvalg</h4>
+            </div>
+            <a href="katalog.html" class="articlecta articlecta1">
+                <h4>Se Kollektionen</h4>
+            </a>
+        </div>
+
+        <div class="indhold Mænd">
+            <div class="articlecontainer mændbox"></div>
+            <div class="articletxt">
+                <h1>Mænd</h1>
+                <h4>Sommerens udvalg</h4>
+            </div>
+            <a href="katalog.html" class="articlecta articlecta2">
+                <h4>Se Kollektionen</h4>
+            </a>
+        </div>
+    </article>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -95,6 +120,31 @@
             cellAlign: 'left',
             contain: true,
             draggable: true
+        });
+
+        <!-- Article -->
+        $(".articlecta1").mouseover(function(e){
+            $(".articlecta1 h4").css({
+                color: "white"
+            });
+        });
+
+        $(".articlecta2").mouseover(function(e){
+            $(".articlecta2 h4").css({
+                color: "white"
+            });
+        });
+
+        $(".articlecta1").mouseout(function(e){
+            $(".articlecta1 h4").css({
+                color: "black",
+            });
+        });
+
+        $(".articlecta2").mouseout(function(e){
+            $(".articlecta2 h4").css({
+                color: "black",
+            });
         });
     });
 </script>

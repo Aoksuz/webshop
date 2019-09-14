@@ -135,7 +135,7 @@ img {
 
 /* Section - forside slider */
 .section{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .ctaplacing{
@@ -179,7 +179,7 @@ img {
 
 .carousel-cell {
     width: 100%; /* full width */
-    height: calc(100vh - 164px); /* height of carousel */
+    height: calc(100vh - 184px); /* height of carousel */
     margin-right: 10px;
 }
 
@@ -188,7 +188,61 @@ img {
     background-size: cover;
 }
 
+.flickity-button {
+    display: none;
+}
 
+/* article */
+.article{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.indhold{
+    margin-top: 50px;
+    width: calc(50% - 25px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articlecontainer{
+    width: 100%;
+    height: 730px;
+}
+
+.articletxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.kvindebox{
+    background-image: url("../images/kvindebox.png");
+}
+
+.mændbox{
+    background-image: url("../images/mændbox.png");
+}
+
+.articlecta{
+    border: solid 3px #F2771B;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articlecta h4{
+}
+
+.articlecta:hover{
+    background-color: #F2771B;
+    color: white;
+}
 
 @media screen and (min-width: 768px) {
 
