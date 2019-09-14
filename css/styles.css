@@ -113,7 +113,7 @@ img {
     }
         /* Katalog */
         .subheader{
-            padding: 4em 0;
+            padding: 6em 0;
             text-align: center;
         }
         .katalog-grid{
@@ -126,8 +126,20 @@ img {
         }
         .produkter-grid{
            display: grid;
-           grid-template: repeat(3, 300px);
+           grid-template-columns: repeat(3, 300px);
            grid-gap: 30px;
+        }
+        .produkt-card{
+            text-align: center;
+        }
+        .produkt-img{
+            max-width: 300px;
+            max-height: 300px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .produkt-img img{
+            object-fit: cover;
         }
 
 
