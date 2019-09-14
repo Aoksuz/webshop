@@ -66,6 +66,14 @@
         <p>Følg os på IG: @sizeofficialdk</p>
     </div>
 
+    <section class="section wrapper">
+        <div class="main-carousel">
+            <div class="carousel-cell slide slide1"></div>
+            <div class="carousel-cell slide slide2"></div>
+            <div class="carousel-cell slide slide3"></div>
+        </div>
+    </section>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -81,7 +89,13 @@
 
 <script type="text/javascript">
     $(document).ready(function (e) {
-        // Din kode her
+        <!-- Section -->
+        $('.main-carousel').flickity({
+            autoPlay: 5000,
+            cellAlign: 'left',
+            contain: true,
+            draggable: true
+        });
     });
 </script>
 
