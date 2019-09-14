@@ -133,7 +133,66 @@ img {
     font-size: 14px;
 }
 
+/* Section - forside slider */
+.section{
+    margin-top: 30px;
+}
 
+.ctaplacing{
+    display: flex;
+    justify-content: center;
+}
+
+.sectioncta{
+    background-color: transparent;
+    border: solid 3px #FA7268;
+    position: absolute;
+    color: white;
+    z-index: 1;
+    width: 220px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectioncta:hover{
+    background-color: #FA7268;
+}
+
+.sectioncta a{
+    text-decoration: none;
+    color: white;
+}
+
+.slide1{
+    background-image: url("../images/banner1.jpg");
+}
+
+.slide2{
+    background-image: url("../images/banner2.jpg");
+}
+
+.slide3{
+    background-image: url("../images/banner3.jpg");
+}
+
+.carousel-cell {
+    width: 100%; /* full width */
+    height: calc(100vh - 164px); /* height of carousel */
+    margin-right: 10px;
+}
+
+.slide{
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+}
 
 @media screen and (max-width: 992px) {
     .nav-icons{
