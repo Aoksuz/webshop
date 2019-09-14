@@ -37,6 +37,7 @@ img {
     /* Andet CSS */
     .wrapper{
         max-width: 1300px;
+        padding: 0 1emm;
         margin: 0 auto;
     }
     h1,h2,h3,h4,h5,h6,p,a,span{
@@ -50,7 +51,7 @@ img {
 
     /* Navbar */
     .navbar{
-        padding: 2em 0;
+        padding: 2em 1em;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -86,13 +87,21 @@ img {
         text-decoration: none;
         font-weight: 600;
     }
-    .cart-icon::before{
-        content: '2';
+    .nav-icons{
+        width: auto;
+    }
+    .cart-icon svg{
+        position: absolute;
+    }
+    .cart-label{
         text-align: center;
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: relative;
-        top: -20px;
-        left: 33px;
+        top: -8px;
+        left: 10px;
+        z-index: 1;
         font-family: "Open Sans", sans-serif;
         font-size: 12px;
         font-weight: 700;
@@ -124,18 +133,18 @@ img {
     font-size: 14px;
 }
 
-@media screen and (min-width: 768px) {
 
-}
 
-@media screen and (min-width: 992px) {
-
-}
-
-@media screen and (min-width: 1200px) {
-
-}
-
-@media print {
-
+@media screen and (max-width: 992px) {
+    .nav-icons{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+    }
+    .nav-links,.search input{
+        display: none;
+    }
+    .nav-menu,.search-icon{
+        display: block;
+    }
 }
