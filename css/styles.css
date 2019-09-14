@@ -33,6 +33,80 @@ img {
     height: auto;
 }
 
+/* Egen CSS */
+    /* Andet CSS */
+    .wrapper{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    h1,h2,h3,h4,h5,h6,p,a,span{
+        font-family: "Open Sans";
+        color: #141C17;
+    }
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+
+    /* Navbar */
+    .navbar{
+        padding: 2em 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+    }
+    .logo img{
+        height: 40px;
+    }
+    .search input{
+        padding: 3px 0px;
+        border: none;
+        border-bottom: 1.5px solid #F2771B;
+        margin-top: 0px;
+        width: 300px;
+        transition: 300ms ease-in-out;
+    }
+    .search input:focus{
+        outline: none;
+        transition: 200ms ease-in-out;
+        padding: 5px 3px;
+    }
+    .search-icon, .nav-menu{
+        display: none;
+    }
+    .nav-links{
+        list-style: none;
+        display: flex;
+    }
+    .nav-link{
+        margin: 0 30px;
+    }
+    .nav-item{
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .cart-icon::before{
+        content: '2';
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        top: -20px;
+        left: 33px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        width: 18px;
+        height: 18px;
+        border-radius: 100%;
+        color: white;
+        background: #F2771B;
+    }
+
+
+
+
+
 @media screen and (min-width: 768px) {
 
 }
