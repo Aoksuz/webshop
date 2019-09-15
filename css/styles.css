@@ -542,6 +542,82 @@ img {
 }
 
 
+/* Betalings processen */
+.betalingcontainer{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.betalingcol{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.betalingcol p{
+    font-weight: 800;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.skema{
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form2{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputcontainer2{
+    width: 40px;
+    height: 30px;
+}
+
+.inputudlob{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+
+.inputcontainer{
+    height: 30px;
+}
+
+.input{
+    font-family: "Open Sans", sans-serif;
+}
+
+.inputcontainer3{
+    width: 50px;
+    height: 30px;
+}
+
+.betal{
+    background-color: #93C088;
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.betal h2{
+    color: white;
+}
+
+
 
 @media screen and (min-width: 768px) {
 
