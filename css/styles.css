@@ -410,12 +410,6 @@ img {
     width: 950px;
 }
 
-.tjekud{
-    width: 300px;
-    height: 100px;
-    background-color: #141C17;
-}
-
 .kurvvalg{
     display: flex;
     flex-direction: row;
@@ -479,6 +473,75 @@ img {
 .kurvcol4 h3{
     font-size: 14px;
 }
+
+.tjekud{
+    width: 300px;
+    height: 400px;
+}
+
+.tjekudcontainer{
+    background-color: #141C17;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+}
+
+.tjekrow1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tjekrow1 p{
+    color: white;
+}
+
+.tjekrow2{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.tjekudopstil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tjekrow2 h4{
+    color: white;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.tjekrow3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tjekrow3 h3{
+    color: white;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+
+
+.betaling{
+    background-color: #F2771B;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.betaling p{
+    color: white;
+}
+
+
 
 @media screen and (min-width: 768px) {
 
