@@ -386,6 +386,100 @@ img {
     margin-right: 5px;
 }
 
+/* Kurv underside */
+.kurvoverblik{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kurvoverblik p{
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.kurvcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kurvindhold{
+    width: 950px;
+}
+
+.tjekud{
+    width: 300px;
+    height: 100px;
+    background-color: #141C17;
+}
+
+.kurvvalg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: solid 1px gray;
+}
+
+.kurvcol{
+    width: 23%;
+    height: 200px;
+}
+
+.kurv1col1{
+    background-image: url("../images/nybox22.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.kurv2col1{
+    background-image: url("../images/nybox1.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.kurvcol2 h2{
+    font-size: 16px;
+}
+
+.kurvcol2 h3{
+    font-size: 14px;
+}
+
+.kurvcol2 h5{
+    color: gray;
+    padding-top: 10px;
+}
+
+.kurvcol3{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.kurvcol3 h3{
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.kurvcol3 input{
+    width: 35px;
+    height: 20px;
+}
+
+.kurvcol4{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.kurvcol4 h3{
+    font-size: 14px;
+}
+
 @media screen and (min-width: 768px) {
 
 }
