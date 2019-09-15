@@ -303,6 +303,52 @@ img {
     padding: 0 5px 5px 0;
 }
 
+/* Nye varer */
+.arrivals{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.arrivalscontainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nybox{
+    height: 350px;
+    width: 450px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 7px 6px rgba(0,0,0,0.2);
+}
+
+.nyboxbillede{
+    width: 100%;
+    height: 85%;
+    background-position: center;
+    background-size: cover;
+}
+
+.nybox1{
+    background-image: url("../images/nybox1.png");
+}
+
+.nybox2{
+    background-image: url("../images/nybox2.png");
+}
+
+.blogtext{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (min-width: 768px) {
 
 }
