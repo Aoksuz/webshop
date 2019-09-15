@@ -244,6 +244,65 @@ img {
     color: white;
 }
 
+/* clothing feed */
+.feed{
+    width: 100%;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    padding: 30px 0 40px;
+}
+
+.feedcontainer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog{
+    background-color: white;
+    height: 350px;
+    width: 250px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 7px 6px rgba(0,0,0,0.2);
+}
+
+.blogbillede{
+    width: 100%;
+    height: 75%;
+    background-position: center;
+    background-size: cover;
+}
+
+.blogbillede1{
+    background-image: url("../images/blogbillede1.jpg");
+}
+
+.blogbillede2{
+    background-image: url("../images/blogbillede2.jpg");
+}
+
+.blogbillede3{
+    background-image: url("../images/blogbillede3.jpg");
+}
+
+.blogtext{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.blogdato{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5px 5px 0;
+}
+
 @media screen and (min-width: 768px) {
 
 }
