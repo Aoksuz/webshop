@@ -411,7 +411,8 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 7px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 7px 6px rgba(0,0,0,0.1);
+    transition: 300ms ease;
 }
 
 .blogbillede{
@@ -466,7 +467,7 @@ img {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 7px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 7px 6px rgba(0,0,0,0.1);
 }
 
 .nyboxbillede{
