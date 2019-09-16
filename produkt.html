@@ -1,0 +1,149 @@
+<html lang="da">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Sko til herre - SIZE?</title>
+    
+    <!-- Meta tags -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- OG Meta Tags-->
+    <meta property="og:title" content="titel"/>
+    <meta property="og:url" content="http://www.domain.dk"/>
+    <meta property="og:image" content="https://www.domain.dk/img.jpg"/>
+    <meta property="og:description" content="Beskrivelse"/>
+    <meta property="og:locale" content="da_DK"/>
+
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts - Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+<body>
+    <nav class="navbar wrapper">
+        <div class="logo">
+            <img src="img/logo.png">
+        </div>
+        <div class="search">
+            <input placeholder="Søg...">
+        </div>      
+        <ul class="nav-links">
+            <li class="nav-link">
+                <a href="produkt.html" class="nav-item">Nyheder</a>
+            </li>
+            <li class="nav-link">
+                <a href="produkt.html" class="nav-item">Mænd</a>
+            </li>
+            <li class="nav-link">
+                <a href="produkt.html" class="nav-item">Kvinder</a>
+            </li>
+            <li class="nav-link">
+                <a href="produkt.html" class="nav-item">Udsalg</a>
+            </li>
+        </ul>
+        <div class="nav-icons">
+        <div class="search-icon">
+                <i data-feather="search"></i>
+           </div>
+        <div class="nav-menu">
+            <i data-feather="menu"></i>
+        </div>
+        
+        <div class="cart">
+            <a class="cart-icon" href="kurv.html"><i data-feather="shopping-bag"></i><span class="cart-label">2</span></a>
+        </div>
+    </div>
+    </nav>
+    <div class="wrapper">
+        <div class="produkt-grid">
+            <div class="thumbs">
+                <img class="active" src="img/produkter/1.jpg">
+                <img src="img/produkter/2.jpg">
+                <img src="img/produkter/3.jpg">
+                <img src="img/produkter/4.jpg">
+                <img src="img/produkter/5.jpg">
+                <img src="img/produkter/6.jpg">
+            </div>
+            <div class="prod-img">
+                <img id="shown-img" src="img/produkter/1.jpg">
+            </div>
+            <div class="produkt-desc">
+                <span class="produkt-label">Nyhed</span>
+                <h1>Undercover X Nike Daybreak</h1>
+                <span class="faded">Bright Citron</span>
+                <span class="price">1299,95 kr.</span>
+                <p class="desc">
+                I samarbejde med det japansk-baserede modemærke Undercover bliver det tidlige 80'ers løbeikon forvandlet med en futuristisk æstetik.
+                <br><br>
+                Silhuetten har en plettet mellemsål og en forlænget hælklemme med en blanding af forskellige materialer på oversiden. 
+                <span class="faded">Begrænset til 1 vare pr. person</span></p>
+                <div class="sizes">
+                    <a class="size unavailable">36.5</a>
+                    <a class="size unavailable">37</a>
+                    <a class="size ">37.5</a>
+                    <a class="size unavailable">38</a>
+                    <a class="size ">38.5</a>
+                    <a class="size ">39</a>
+                    <a class="size ">39.5</a>
+                    <a class="size ">40</a>
+                    <a class="size unavailable">40.5</a>
+                    <a class="size ">41</a>
+                    <a class="size unavailable">41.5</a>
+                    <a class="size unavailable">42</a>
+                    <a class="size ">42.5</a>
+                    <a class="size unavailable">43</a>
+                    <a class="size chosen">43.5</a>
+                    <a class="size unavailable">44</a>
+                    <a class="size ">44.5</a>
+                    <a class="size ">45</a>
+                    <a class="size unavailable">45.5</a>
+                    <a class="size ">46</a>
+                    <a class="size ">46.5</a>
+                </div>
+                <a href="kurv.html" class="buy-btn">Tilføj til kurv</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Feather Icon Replace Script-->
+<script>
+    feather.replace()
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        $('img', $('.thumbs')).on('click',function(){
+                       
+
+           $('.active').removeClass('active');
+           $(this).addClass('active');
+
+           var imgSRC = $('.active').attr("src");
+
+           $('#shown-img').attr("src", imgSRC);      
+       });
+       
+       
+       
+    });
+</script>
+
+</body>
+</html>
