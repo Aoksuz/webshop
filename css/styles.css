@@ -34,13 +34,14 @@ img {
 }
 
 /* Egen CSS */
+    
     /* Andet CSS */
     .wrapper{
         max-width: 1300px;
         padding: 0 1emm;
         margin: 0 auto;
     }
-    h1,h2,h3,h4,h5,h6,p,a,span{
+    h1,h2,h3,h4,h5,h6,p,a,span,label{
         font-family: "Open Sans";
         color: #141C17;
     }
@@ -111,6 +112,9 @@ img {
         color: white;
         background: #F2771B;
     }
+
+
+
         /* Katalog */
         .subheader{
             padding: 6em 0;
@@ -128,9 +132,14 @@ img {
            display: grid;
            grid-template-columns: repeat(3, 300px);
            grid-gap: 30px;
+           margin-bottom: 100px;
         }
         .produkt-card{
             text-align: center;
+        }
+        .produkt-card:hover .produkt-img>img{
+            transform: scale(1.05);
+            transition: 200ms ease-in-out;
         }
         .produkt-img{
             max-width: 300px;
@@ -140,6 +149,103 @@ img {
         }
         .produkt-img img{
             object-fit: cover;
+            transition: 300ms ease-in-out;
+        }
+        .produkt-card .label{
+            padding: 5px 15px;
+            position: relative;
+            width: fit-content;
+            top: -320px;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-family: "open sans", sans-serif;
+            font-weight: 700;
+        }
+        .label.udsolgt{
+            background: #E03809;
+            color: #ffffff;
+        }
+        .label.nyhed{
+            background: #93C088;
+            color: #ffffff;
+        }
+        .label.tilbud{
+            background: #F9D401;
+            color: #141C17;
+        }
+        .tilbud-pris{
+            opacity: 0.5;
+            text-decoration: line-through;
+            margin-right: 10px;
+        }
+        .pagination{
+            grid-column: 2;
+            margin: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pagination svg{
+            stroke: #F2771B;
+        }
+        .pagination span{
+            width: 80px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .filters p{
+            margin: 5px 0;
+        }
+        [type="radio"]:checked,
+        [type="radio"]:not(:checked) {
+             position: absolute;
+             left: -9999px;
+            }
+        [type="radio"]:checked + label,
+        [type="radio"]:not(:checked) + label
+        {
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+            line-height: 20px;
+            display: inline-block;
+            color: #666;
+        }
+        [type="radio"]:checked + label:before,
+        [type="radio"]:not(:checked) + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #ececec;
+            border-radius: 100%;
+            background: #ececec;
+        }
+        [type="radio"]:checked + label:after,
+        [type="radio"]:not(:checked) + label:after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: #F2771B;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+        [type="radio"]:not(:checked) + label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+        [type="radio"]:checked + label:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
         }
 
 
