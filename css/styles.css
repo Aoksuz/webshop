@@ -38,7 +38,7 @@ img {
     /* Andet CSS */
     .wrapper{
         max-width: 1300px;
-        padding: 0 1emm;
+        padding: 0 1em;
         margin: 0 auto;
     }
     h1,h2,h3,h4,h5,h6,p,a,span,label{
