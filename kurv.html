@@ -24,6 +24,9 @@
     <!-- Google Fonts - Open Sans -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
 
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
@@ -136,6 +139,21 @@
                 </a>
             </div>
         </div>
+
+        <div class="accept">
+            <p>Vi acceptere</p>
+            <i class="fab fa-cc-mastercard" style="color:red;"></i>
+            <i class="fab fa-cc-visa" style="color:navy;"></i>
+            <i class="fab fa-cc-amex" style="color:blue;"></i>
+            <i class="fab fa-cc-paypal" style="color:dodgerblue"></i>
+            <i class="fab fa-cc-apple-pay" style="color:dimgrey"></i>
+        </div>
+
+        <div class="kupon">
+            <p>Indsæt rabatkode her <span>(valgfrit)</span></p>
+            <input class="inputcontainer writehere" name="rabatkode" placeholder="Indløs din kode">
+            <button class="brugkode"><p>INDLØS</p></button>
+        </div>
     </section>
 
     <footer class="footer">
@@ -174,7 +192,9 @@
 
 <script type="text/javascript">
     $(document).ready(function (e) {
-        // Din kode her
+        $('.writehere').click(function () {
+            $('.brugkode').toggle();
+        });
     });
 </script>
 
