@@ -54,10 +54,10 @@ a {
   height: 40px; }
 
 .search input {
-  padding: 3px 0px;
+  padding: 3px 0;
   border: none;
   border-bottom: 1.5px solid #F2771B;
-  margin-top: 0px;
+  margin-top: 0;
   width: 300px;
   transition: 300ms ease-in-out; }
 
@@ -294,7 +294,7 @@ a {
 .buy-btn {
   display: block;
   padding: 10px 66px;
-  margin: 10px 0px;
+  margin: 10px 0;
   background: #F2771B;
   width: fit-content;
   font-weight: 700;
@@ -538,140 +538,142 @@ a {
   margin-right: 5px; }
 
 /* Kurv underside */
-.kurvoverblik {
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-  margin-bottom: 50px; }
-
-.kurvoverblik p {
-  font-weight: 800;
-  font-size: 22px; }
-
-.kurvcontainer {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.kurvindhold {
-  width: 950px; }
-
-.kurvvalg {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px 0;
-  border-bottom: solid 1px gray; }
-
-.kurvcol {
-  width: 23%;
-  height: 200px; }
-
-.kurv1col1 {
-  background-image: url("../images/nybox22.png");
-  background-position: center;
-  background-size: cover; }
-
-.kurv2col1 {
-  background-image: url("../images/nybox1.png");
-  background-position: center;
-  background-size: cover; }
-
-.kurvcol2 h2 {
-  font-size: 16px; }
-
-.kurvcol2 h3 {
-  font-size: 14px;
-  opacity: 0.7;
-  padding-bottom: 10px; }
-
-.kurvcol2 h5 {
-  color: gray;
-  width: fit-content;
-  cursor: pointer; }
-
-.kurvcol2 h5:hover {
-  color: red; }
-
-.kurvcol3 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row; }
-
-.kurvcol3 h3 {
-  font-size: 14px;
-  margin-right: 10px; }
-
-.kurvcol3 input {
-  width: 35px;
-  height: 20px; }
-
-.kurvcol4 {
-  display: flex;
-  justify-content: flex-end; }
-
-.kurvcol4 h3 {
-  font-size: 14px; }
-
-.tjekud {
-  width: 300px;
-  height: 400px; }
-
-.tjekudcontainer {
-  background-color: #141C17;
-  width: 300px;
-  height: 250px;
-  padding: 20px; }
-
-.tjekrow1 {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.tjekrow1 p {
-  color: white; }
-
-.tjekrow2 {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 0; }
-
-.tjekudopstil {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.tjekrow2 h4 {
-  color: white;
-  line-height: 26px;
-  font-size: 14px; }
-
-.tjekrow3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.tjekrow3 h3 {
-  color: white;
-  line-height: 26px;
-  font-size: 16px; }
-
-.betaling {
-  background-color: #F2771B;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.betaling p {
-  color: white; }
-
-.betaling:hover p {
-  transform: scale(1.1);
-  transition: 100ms ease; }
+@media screen and (min-width: 992px) {
+  .kurvoverblik {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-bottom: 50px; }
+  .kurvoverblik p {
+    font-weight: 800;
+    font-size: 22px; }
+  .kurvcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .kurvindhold {
+    width: 920px; }
+  .kurvvalg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: solid 1px gray; }
+  .kurvcol {
+    width: 23%;
+    height: 200px; }
+  .kurv1col1 {
+    background-image: url("../images/nybox22.png");
+    background-position: center;
+    background-size: cover; }
+  .kurv2col1 {
+    background-image: url("../images/nybox1.png");
+    background-position: center;
+    background-size: cover; }
+  .kurvcol2 h2 {
+    font-size: 16px; }
+  .kurvcol2 h3 {
+    font-size: 14px;
+    opacity: 0.7;
+    padding-bottom: 10px; }
+  .kurvcol2 h5 {
+    color: gray;
+    width: fit-content;
+    cursor: pointer; }
+  .kurvcol2 h5:hover {
+    color: red; }
+  .kurvcol3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; }
+  .kurvcol3 h3 {
+    font-size: 14px;
+    margin-right: 10px; }
+  .kurvcol3 input {
+    width: 35px;
+    height: 20px; }
+  .kurvcol4 {
+    display: flex;
+    justify-content: flex-end; }
+  .kurvcol4 h3 {
+    font-size: 14px; }
+  .tjekud {
+    width: 300px;
+    height: 400px; }
+  .tjekudcontainer {
+    background-color: #141C17;
+    width: 300px;
+    height: 250px;
+    padding: 20px; }
+  .tjekrow1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .tjekrow1 p {
+    color: white; }
+  .tjekrow2 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0; }
+  .tjekudopstil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .tjekrow2 h4 {
+    color: white;
+    line-height: 26px;
+    font-size: 14px; }
+  .tjekrow3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .tjekrow3 h3 {
+    color: white;
+    line-height: 26px;
+    font-size: 16px; }
+  .betaling {
+    background-color: #F2771B;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .betaling p {
+    color: white; }
+  .betaling:hover p {
+    transform: scale(1.1);
+    transition: 100ms ease; }
+  /* Sass tilføjet til kurv underside web - Stephanie */
+  .accept {
+    border-bottom: solid 1px gray;
+    padding: 30px 0; }
+    .accept .fab {
+      margin-top: 10px;
+      font-size: 42px;
+      letter-spacing: 10px; }
+  .kupon {
+    padding: 30px 0;
+    border-bottom: solid 1px gray; }
+    .kupon p span {
+      color: #666666; }
+    .kupon input {
+      margin-top: 10px;
+      width: 50%; }
+    .kupon .brugkode {
+      margin-top: 10px;
+      cursor: pointer;
+      width: 50%;
+      display: none;
+      background-color: #F2771B; }
+      .kupon .brugkode p {
+        color: white;
+        font-size: 12px;
+        padding: 5px 0; }
+        .kupon .brugkode p:hover {
+          transform: scale(1.1);
+          transition: 100ms ease; } }
 
 /* Betalings processen */
 .betalingcontainer {
