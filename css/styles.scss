@@ -343,13 +343,11 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
+
+    @media  screen and (max-width: 768px) {
+        display: none;
+    }
 }
-
-
-    
-
-
-
 
 .infobar p{
     color: white;
@@ -360,6 +358,11 @@ img {
 /* Section - forside slider */
 .section{
     margin-top: 50px;
+    padding: 0;
+
+    @media  screen and (max-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .ctaplacing{
@@ -404,7 +407,10 @@ img {
 .carousel-cell {
     width: 100%; /* full width */
     height: calc(100vh - 184px); /* height of carousel */
-    margin-right: 10px;
+
+    @media  screen and (max-width: 768px) {
+        height: 500px;
+    }
 }
 
 .slide{
@@ -429,11 +435,19 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media  screen and (max-width: 768px) {
+        width: calc(50% - 0.5em);
+    }
 }
 
 .articlecontainer{
     width: 100%;
     height: 730px;
+
+    @media  screen and (max-width: 768px) {
+        height: 500px;
+    }
 }
 
 .articletxt{
@@ -445,10 +459,20 @@ img {
 
 .kvindebox{
     background-image: url("../images/kvindebox.png");
+    background-position: center;
+
+    @media  screen and (max-width: 768px) {
+        background-size: cover;
+    }
 }
 
-.mændbox{
+.menbox{
     background-image: url("../images/mændbox.png");
+    background-position: center;
+
+    @media  screen and (max-width: 768px) {
+        background-size: cover;
+    }
 }
 
 .articlecta{
@@ -592,7 +616,6 @@ img {
 .footercol{
     display: flex;
     flex-direction: column;
-    width: 25%;
 }
 
 .footercol h3{
@@ -606,7 +629,6 @@ img {
 .col4{
     display: flex;
     justify-content: flex-start;
-    width: 25%;
 }
 
 .feather{
