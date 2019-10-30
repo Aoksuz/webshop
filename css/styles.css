@@ -387,7 +387,8 @@ a {
 .article {
   display: flex;
   justify-content: space-between;
-  flex-direction: row; }
+  flex-direction: row;
+  padding: 0; }
 
 .indhold {
   margin-top: 50px;
@@ -397,7 +398,7 @@ a {
   align-items: center; }
   @media screen and (max-width: 768px) {
     .indhold {
-      width: calc(50% - 0.5em); } }
+      width: 50%; } }
 
 .articlecontainer {
   width: 100%;
@@ -411,6 +412,11 @@ a {
   flex-direction: column;
   align-items: center;
   margin: 20px 0; }
+  @media screen and (max-width: 768px) {
+    .articletxt h1 {
+      font-size: 18px; }
+    .articletxt h4 {
+      font-size: 12px; } }
 
 .kvindebox {
   background-image: url("../images/kvindebox.png");
@@ -433,6 +439,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .articlecta {
+      width: 60%;
+      height: 40px; }
+      .articlecta h4 {
+        font-size: 12px; } }
 
 .articlecta:hover {
   background-color: #F2771B;
