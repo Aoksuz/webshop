@@ -521,12 +521,13 @@ img {
 }
 
 .feedcontainer{
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     @media  screen and (max-width: 768px) {
-        width: 100%;
+        padding: 0;
+        justify-content: space-between;
     }
 }
 
@@ -543,6 +544,14 @@ img {
 
     @media  screen and (max-width: 768px) {
         width: 31%;
+    }
+}
+
+.blog2{
+    margin: 30px 2em 0;
+
+    @media  screen and (max-width: 768px) {
+        margin: 30px 0 0;
     }
 }
 

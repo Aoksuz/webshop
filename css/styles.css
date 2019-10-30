@@ -461,12 +461,13 @@ a {
   padding: 30px 0 40px; }
 
 .feedcontainer {
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: center; }
   @media screen and (max-width: 768px) {
     .feedcontainer {
-      width: 100%; } }
+      padding: 0;
+      justify-content: space-between; } }
 
 .blog {
   background-color: white;
@@ -481,6 +482,12 @@ a {
   @media screen and (max-width: 768px) {
     .blog {
       width: 31%; } }
+
+.blog2 {
+  margin: 30px 2em 0; }
+  @media screen and (max-width: 768px) {
+    .blog2 {
+      margin: 30px 0 0; } }
 
 .blogbillede {
   width: 100%;
