@@ -343,12 +343,10 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-}
 
-
-    
-
-
+    @media  screen and (max-width: 768px) {
+        display: none;
+    }
 
 
 .infobar p{
@@ -360,6 +358,11 @@ img {
 /* Section - forside slider */
 .section{
     margin-top: 50px;
+    padding: 0;
+
+    @media  screen and (max-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .ctaplacing{
@@ -404,7 +407,10 @@ img {
 .carousel-cell {
     width: 100%; /* full width */
     height: calc(100vh - 184px); /* height of carousel */
-    margin-right: 10px;
+
+    @media  screen and (max-width: 768px) {
+        height: 500px;
+    }
 }
 
 .slide{
@@ -421,6 +427,7 @@ img {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    padding: 0;
 }
 
 .indhold{
@@ -429,11 +436,19 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media  screen and (max-width: 768px) {
+        width: 50%;
+    }
 }
 
 .articlecontainer{
     width: 100%;
     height: 730px;
+
+    @media  screen and (max-width: 768px) {
+        height: 500px;
+    }
 }
 
 .articletxt{
@@ -441,14 +456,34 @@ img {
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
+
+    @media  screen and (max-width: 768px) {
+        h1{
+            font-size: 18px;
+        }
+
+        h4{
+            font-size: 12px;
+        }
+    }
 }
 
 .kvindebox{
     background-image: url("../images/kvindebox.png");
+    background-position: center;
+
+    @media  screen and (max-width: 768px) {
+        background-size: cover;
+    }
 }
 
-.mændbox{
+.menbox{
     background-image: url("../images/mændbox.png");
+    background-position: center;
+
+    @media  screen and (max-width: 768px) {
+        background-size: cover;
+    }
 }
 
 .articlecta{
@@ -458,9 +493,15 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.articlecta h4{
+    @media  screen and (max-width: 768px) {
+        width: 60%;
+        height: 40px;
+
+        h4{
+            font-size: 12px;
+        }
+    }
 }
 
 .articlecta:hover{
@@ -480,9 +521,14 @@ img {
 }
 
 .feedcontainer{
-    width: 50%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
+    @media  screen and (max-width: 768px) {
+        padding: 0;
+        justify-content: space-between;
+    }
 }
 
 .blog{
@@ -495,6 +541,18 @@ img {
     justify-content: space-between;
     box-shadow: 0 7px 6px rgba(0,0,0,0.1);
     transition: 300ms ease;
+
+    @media  screen and (max-width: 768px) {
+        width: 31%;
+    }
+}
+
+.blog2{
+    margin: 30px 2em 0;
+
+    @media  screen and (max-width: 768px) {
+        margin: 30px 0 0;
+    }
 }
 
 .blogbillede{
@@ -502,6 +560,10 @@ img {
     height: 75%;
     background-position: center;
     background-size: cover;
+
+    @media  screen and (max-width: 768px) {
+        background-size: cover;
+    }
 }
 
 .blogbillede1{
@@ -520,6 +582,12 @@ img {
     display: flex;
     justify-content: center;
     text-align: center;
+
+    @media  screen and (max-width: 768px) {
+        h4{
+            font-size: 14px;
+        }
+    }
 }
 
 .blogdato{
@@ -543,6 +611,10 @@ img {
     width: 50%;
     display: flex;
     justify-content: space-between;
+
+    @media  screen and (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .nybox{
@@ -552,6 +624,11 @@ img {
     display: flex;
     flex-direction: column;
     box-shadow: 0 7px 6px rgba(0,0,0,0.1);
+
+    @media  screen and (max-width: 768px) {
+        width: 48%;
+        height: 250px;
+    }
 }
 
 .nyboxbillede{
@@ -559,14 +636,18 @@ img {
     height: 85%;
     background-position: center;
     background-size: cover;
+
+    @media  screen and (max-width: 768px) {
+
+    }
 }
 
 .nybox1{
-    background-image: url("../images/nybox1.png");
+    background-image: url("../images/joyride.png");
 }
 
 .nybox2{
-    background-image: url("../images/nybox2.png");
+    background-image: url("../images/signal.png");
 }
 
 .blogtext{
@@ -579,6 +660,9 @@ img {
 /* footer */
 .footer{
     background-color: #F3F3F3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .footercontainer{
@@ -586,27 +670,43 @@ img {
     flex-direction: row;
     justify-content: space-between;
     padding: 30px 0;
-    height: 200px;
+    width: 100%;
+
+    @media  screen and (max-width: 768px) {
+        flex-direction: column;
+        width: fit-content;
+    }
 }
 
 .footercol{
     display: flex;
     flex-direction: column;
-    width: 25%;
-}
 
-.footercol h3{
-    line-height: 40px;
-}
+    h3{
+        line-height: 40px;
+    }
+    h5{
+        line-height: 25px;
+    }
 
-.footercol h5{
-    line-height: 25px;
+    @media  screen and (max-width: 768px) {
+        margin: 0 0 20px;
+
+        h3{
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        h5{
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
 }
 
 .col4{
     display: flex;
     justify-content: flex-start;
-    width: 25%;
 }
 
 .feather{
@@ -614,194 +714,7 @@ img {
 }
 
 
-/* Kurv underside mobil - Stephanie */
-.kurvoverblik{
-    padding-top: 50px;
-    margin-bottom: 50px;
-
-    p {
-        font-weight: 800;
-        font-size: 22px;
-    }
-
-    .kurvcontainer{
-        width: 100%;
-
-        justify-content: space-between;
-
-        .kurvindhold {
-            .kurvvalg {
-                display: flex;
-                width: 100%;
-                padding: 20px 0;
-                border-bottom: $border-bottom;
-                justify-content: space-between;
-
-                .kurvcol {
-                    height: 200px;
-                    display: flex;
-                }
-
-                .computer {
-                    .kurv1col1{
-                        background-image: url("../images/nybox22.png");
-                        background-position: center;
-                        background-size: cover;
-                        width: 100px;
-                        height: 100px;
-                    }
-
-                    .kurv2col1{
-                        background-image: url("../images/nybox1.png");
-                        background-position: center;
-                        background-size: cover;
-                        width: 100px;
-                        height: 100px;
-                    }
-
-                    .kurvcol2 {
-                        display: flex;
-                        flex-direction: column;
-                        margin-left: 10px;
-
-                        h2 {
-                            font-size: 16px;
-                        }
-
-                        h3 {
-                            font-size: 14px;
-                            opacity: 0.7;
-                            padding-bottom: 10px;
-                        }
-
-                        h5 {
-                            color: gray;
-                            width: fit-content;
-                            cursor: pointer;
-
-                            &:hover {
-                                color: red;
-                            }
-                        }
-                    }
-                }
-
-
-
-                .mobile {
-                    flex-direction: column;
-
-                    .kurvcol3{
-                        text-align: right;
-                        justify-content: end;
-                        direction: rtl;
-                        flex-direction: column;
-
-                        h3 {
-                            font-size: 14px;
-                        }
-
-                        input {
-                            width: 35px;
-                            height: 20px;
-                        }
-                    }
-
-                    .kurvcol4{
-                        justify-content: flex-end;
-                        flex-direction: column;
-
-                        h3 {
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .tjekud{
-            .tjekudcontainer{
-                background-color: #141C17;
-                height: 250px;
-                padding: 20px;
-
-
-                .tjekrow1{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    p {
-                        color: white;
-                    }
-                }
-
-                .tjekrow2{
-                    display: flex;
-                    flex-direction: column;
-                    padding: 30px 0;
-
-                    .tjekudopstil{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-
-                        h4 {
-                            color: white;
-                            line-height: 26px;
-                            font-size: 14px;
-                        }
-                    }
-                }
-
-                .tjekrow3{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-
-                    h3 {
-                        color: white;
-                        line-height: 26px;
-                        font-size: 16px;
-                    }
-                }
-            }
-
-            .betaling{
-                background-color: #F2771B;
-                width: 100%;
-                height: 60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                p {
-                    color: white;
-
-                    &:hover {
-                        transform: scale(1.1);
-                        transition: 100ms ease;
-                    }
-                }
-            }
-        }
-    }
-
-    .accept {
-        border-bottom: $border-bottom;
-        padding: 30px 0;
-
-
-        .fab {
-            margin-top: 10px;
-            font-size: 42px;
-            letter-spacing: 10px;
-        }
-    }
-
-    .kupon {
-        padding: 30px 0;
-        border-bottom: $border-bottom;
+/* Kurv underside */
 
         p {
             span {
@@ -869,15 +782,16 @@ img {
 
                     .computer {
                         .kurv1col1{
-                            background-image: url("../images/nybox22.png");
+                            background-image: url("../images/signal.png");
                             background-position: center;
                             background-size: cover;
                             width: 200px;
                             height: 200px;
                         }
 
+
                         .kurv2col1{
-                            background-image: url("../images/nybox1.png");
+                            background-image: url("../images/joyride.png");
                             background-position: center;
                             background-size: cover;
                             width: 200px;
