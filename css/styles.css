@@ -601,76 +601,80 @@ a {
           flex-direction: column; }
           .kurvoverblik .kurvcontainer .kurvindhold .kurvvalg .mobile .kurvcol4 h3 {
             font-size: 14px; }
-    .kurvoverblik .kurvcontainer .tjekud .tjekudcontainer {
-      background-color: #141C17;
-      height: 250px;
-      padding: 20px; }
-      .kurvoverblik .kurvcontainer .tjekud .tjekudcontainer .tjekrow1 {
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .kurvoverblik .kurvcontainer .tjekud .tjekudcontainer .tjekrow1 p {
-          color: white; }
-      .kurvoverblik .kurvcontainer .tjekud .tjekudcontainer .tjekrow2 {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 0; }
-        .kurvoverblik .kurvcontainer .tjekud .tjekudcontainer .tjekrow2 .tjekudopstil {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between; }
-          .kurvoverblik .kurvcontainer .tjekud .tjekudcontainer .tjekrow2 .tjekudopstil h4 {
-            color: white;
-            line-height: 26px;
-            font-size: 14px; }
-      .kurvoverblik .kurvcontainer .tjekud .tjekudcontainer .tjekrow3 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; }
-        .kurvoverblik .kurvcontainer .tjekud .tjekudcontainer .tjekrow3 h3 {
-          color: white;
-          line-height: 26px;
-          font-size: 16px; }
-    .kurvoverblik .kurvcontainer .tjekud .betaling {
-      background-color: #F2771B;
-      width: 100%;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .kurvoverblik .kurvcontainer .tjekud .betaling p {
-        color: white; }
-        .kurvoverblik .kurvcontainer .tjekud .betaling p:hover {
-          transform: scale(1.1);
-          transition: 100ms ease; }
-  .kurvoverblik .accept {
-    border-bottom: solid 1px gray;
+
+.tjekud .tjekudcontainer {
+  background-color: #141C17;
+  height: 250px;
+  padding: 20px; }
+  .tjekud .tjekudcontainer .tjekrow1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .tjekud .tjekudcontainer .tjekrow1 p {
+      color: white; }
+  .tjekud .tjekudcontainer .tjekrow2 {
+    display: flex;
+    flex-direction: column;
     padding: 30px 0; }
-    .kurvoverblik .accept .fab {
-      margin-top: 10px;
-      font-size: 42px;
-      letter-spacing: 10px; }
-  .kurvoverblik .kupon {
-    padding: 30px 0;
-    border-bottom: solid 1px gray; }
-    .kurvoverblik .kupon p span {
-      color: #666666; }
-    .kurvoverblik .kupon input {
-      margin-top: 10px;
-      width: 100%; }
-    .kurvoverblik .kupon .brugkode {
-      margin-top: 10px;
-      cursor: pointer;
-      width: 100%;
-      display: none;
-      background-color: #F2771B; }
-      .kurvoverblik .kupon .brugkode p {
+    .tjekud .tjekudcontainer .tjekrow2 .tjekudopstil {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .tjekud .tjekudcontainer .tjekrow2 .tjekudopstil h4 {
         color: white;
-        font-size: 12px;
-        padding: 5px 0; }
-        .kurvoverblik .kupon .brugkode p:hover {
-          transform: scale(1.1);
-          transition: 100ms ease; }
+        line-height: 26px;
+        font-size: 14px; }
+  .tjekud .tjekudcontainer .tjekrow3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .tjekud .tjekudcontainer .tjekrow3 h3 {
+      color: white;
+      line-height: 26px;
+      font-size: 16px; }
+
+.tjekud .betaling {
+  background-color: #F2771B;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .tjekud .betaling p {
+    color: white; }
+    .tjekud .betaling p:hover {
+      transform: scale(1.1);
+      transition: 100ms ease; }
+
+.accept {
+  border-bottom: solid 1px gray;
+  padding: 30px 0; }
+  .accept .fab {
+    margin-top: 10px;
+    font-size: 42px;
+    letter-spacing: 10px; }
+
+.kupon {
+  padding: 30px 0;
+  border-bottom: solid 1px gray; }
+  .kupon p span {
+    color: #666666; }
+  .kupon input {
+    margin-top: 10px;
+    width: 100%; }
+  .kupon .brugkode {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    display: none;
+    background-color: #F2771B; }
+    .kupon .brugkode p {
+      color: white;
+      font-size: 12px;
+      padding: 5px 0; }
+      .kupon .brugkode p:hover {
+        transform: scale(1.1);
+        transition: 100ms ease; }
 
 @media screen and (min-width: 992px) {
   .kurvoverblik {
