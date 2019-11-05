@@ -1,6 +1,6 @@
 $computer: "screen and (min-width: 992px)";
 
-$border-buttom: solid 1px gray;
+$border-bottom: solid 1px gray;
 
 $orange: #F2771B;
 
@@ -614,177 +614,181 @@ img {
 }
 
 
-/* Kurv underside */
+/* Kurv underside mobil - Stephanie */
+.kurvoverblik{
+    padding-top: 50px;
+    margin-bottom: 50px;
 
-
-@media #{$computer} {
-    .kurvoverblik{
-        display: flex;
-        flex-direction: column;
-        padding-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    .kurvoverblik p{
+    p {
         font-weight: 800;
         font-size: 22px;
     }
 
     .kurvcontainer{
         width: 100%;
-        display: flex;
-        flex-direction: row;
+
         justify-content: space-between;
+
+        .kurvindhold {
+            .kurvvalg {
+                display: flex;
+                width: 100%;
+                padding: 20px 0;
+                border-bottom: $border-bottom;
+                justify-content: space-between;
+
+                .kurvcol {
+                    height: 200px;
+                    display: flex;
+                }
+
+                .computer {
+                    .kurv1col1{
+                        background-image: url("../images/nybox22.png");
+                        background-position: center;
+                        background-size: cover;
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                    .kurv2col1{
+                        background-image: url("../images/nybox1.png");
+                        background-position: center;
+                        background-size: cover;
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                    .kurvcol2 {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 10px;
+
+                        h2 {
+                            font-size: 16px;
+                        }
+
+                        h3 {
+                            font-size: 14px;
+                            opacity: 0.7;
+                            padding-bottom: 10px;
+                        }
+
+                        h5 {
+                            color: gray;
+                            width: fit-content;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+
+
+
+                .mobile {
+                    flex-direction: column;
+
+                    .kurvcol3{
+                        text-align: right;
+                        justify-content: end;
+                        direction: rtl;
+                        flex-direction: column;
+
+                        h3 {
+                            font-size: 14px;
+                        }
+
+                        input {
+                            width: 35px;
+                            height: 20px;
+                        }
+                    }
+
+                    .kurvcol4{
+                        justify-content: flex-end;
+                        flex-direction: column;
+
+                        h3 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tjekud{
+            .tjekudcontainer{
+                background-color: #141C17;
+                height: 250px;
+                padding: 20px;
+
+
+                .tjekrow1{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        color: white;
+                    }
+                }
+
+                .tjekrow2{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px 0;
+
+                    .tjekudopstil{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        h4 {
+                            color: white;
+                            line-height: 26px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .tjekrow3{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    h3 {
+                        color: white;
+                        line-height: 26px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .betaling{
+                background-color: #F2771B;
+                width: 100%;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    color: white;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 100ms ease;
+                    }
+                }
+            }
+        }
     }
 
-    .kurvindhold{
-        width: 920px;
-    }
-
-    .kurvvalg{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        padding: 20px 0;
-        border-bottom: solid 1px gray;
-    }
-
-    .kurvcol{
-        width: 23%;
-        height: 200px;
-    }
-
-    .kurv1col1{
-        background-image: url("../images/nybox22.png");
-        background-position: center;
-        background-size: cover;
-    }
-
-    .kurv2col1{
-        background-image: url("../images/nybox1.png");
-        background-position: center;
-        background-size: cover;
-    }
-
-    .kurvcol2 h2{
-        font-size: 16px;
-    }
-
-    .kurvcol2 h3{
-        font-size: 14px;
-        opacity: 0.7;
-        padding-bottom: 10px;
-    }
-
-    .kurvcol2 h5{
-        color: gray;
-        width: fit-content;
-        cursor: pointer;
-    }
-
-    .kurvcol2 h5:hover{
-        color: red;
-    }
-
-    .kurvcol3{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-    .kurvcol3 h3{
-        font-size: 14px;
-        margin-right: 10px;
-    }
-
-    .kurvcol3 input{
-        width: 35px;
-        height: 20px;
-    }
-
-    .kurvcol4{
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .kurvcol4 h3{
-        font-size: 14px;
-    }
-
-    .tjekud{
-        width: 300px;
-        height: 400px;
-    }
-
-    .tjekudcontainer{
-        background-color: #141C17;
-        width: 300px;
-        height: 250px;
-        padding: 20px;
-    }
-
-    .tjekrow1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .tjekrow1 p{
-        color: white;
-    }
-
-    .tjekrow2{
-        display: flex;
-        flex-direction: column;
-        padding: 30px 0;
-    }
-
-    .tjekudopstil{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .tjekrow2 h4{
-        color: white;
-        line-height: 26px;
-        font-size: 14px;
-    }
-
-    .tjekrow3{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .tjekrow3 h3{
-        color: white;
-        line-height: 26px;
-        font-size: 16px;
-    }
-
-    .betaling{
-        background-color: #F2771B;
-        width: 100%;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .betaling p{
-        color: white;
-    }
-
-    .betaling:hover p{
-        transform: scale(1.1);
-        transition: 100ms ease;
-    }
-
-    /* Sass tilføjet til kurv underside web - Stephanie */
     .accept {
-        border-bottom: $border-buttom;
+        border-bottom: $border-bottom;
         padding: 30px 0;
 
 
@@ -797,7 +801,7 @@ img {
 
     .kupon {
         padding: 30px 0;
-        border-bottom: $border-buttom;
+        border-bottom: $border-bottom;
 
         p {
             span {
@@ -807,13 +811,13 @@ img {
 
         input {
             margin-top: 10px;
-            width: 50%;
+            width: 100%;
         }
 
         .brugkode {
             margin-top: 10px;
             cursor: pointer;
-            width: 50%;
+            width: 100%;
             display: none;
             background-color: $orange;
 
@@ -825,6 +829,233 @@ img {
                 &:hover {
                     transform: scale(1.1);
                     transition: 100ms ease;
+                }
+            }
+        }
+    }
+}
+
+@media #{$computer} {
+    .kurvoverblik{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        margin-bottom: 50px;
+
+        p {
+            font-weight: 800;
+            font-size: 22px;
+        }
+
+        .kurvcontainer{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .kurvindhold{
+                width: 920px;
+
+                .kurvvalg{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 20px 0;
+                    border-bottom: solid 1px gray;
+
+                    .kurvcol{
+
+                    }
+
+                    .computer {
+                        .kurv1col1{
+                            background-image: url("../images/nybox22.png");
+                            background-position: center;
+                            background-size: cover;
+                            width: 200px;
+                            height: 200px;
+                        }
+
+                        .kurv2col1{
+                            background-image: url("../images/nybox1.png");
+                            background-position: center;
+                            background-size: cover;
+                            width: 200px;
+                            height: 200px;
+                        }
+
+                        .kurvcol2 {
+                            margin-left: 20px;
+
+                            h2 {
+                                font-size: 16px;
+                            }
+
+                            h3 {
+                                font-size: 14px;
+                                opacity: 0.7;
+                                padding-bottom: 10px;
+                            }
+
+                            h5 {
+                                color: gray;
+                                width: fit-content;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+
+
+                    .mobile {
+
+                        .kurvcol3{
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: row;
+
+                            h3 {
+                                font-size: 14px;
+                                margin-right: 10px;
+                            }
+
+                            input {
+                                width: 35px;
+                                height: 20px;
+                            }
+                        }
+
+                        .kurvcol4{
+                            display: flex;
+
+                            h3 {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .tjekud{
+            width: 300px;
+            height: 400px;
+
+            .tjekudcontainer{
+                background-color: #141C17;
+                width: 300px;
+                height: 250px;
+                padding: 20px;
+
+                .tjekrow1{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        color: white;
+                    }
+                }
+
+                .tjekrow2{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px 0;
+
+                    h4 {
+                        color: white;
+                        line-height: 26px;
+                        font-size: 14px;
+                    }
+
+                    .tjekudopstil{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+
+                .tjekrow3{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    h3 {
+                        color: white;
+                        line-height: 26px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .betaling{
+                background-color: #F2771B;
+                width: 100%;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    color: white;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 100ms ease;
+                    }
+                }
+            }
+        }
+
+        /* Sass tilføjet til kurv underside web - Stephanie */
+        .accept {
+            border-bottom: $border-bottom;
+            width: 920px;
+            padding: 30px 0;
+
+
+            .fab {
+                margin-top: 10px;
+                font-size: 42px;
+                letter-spacing: 10px;
+            }
+        }
+
+        .kupon {
+            padding: 30px 0;
+            border-bottom: $border-bottom;
+            width: 920px;
+
+            p {
+                span {
+                    color: #666666;
+                }
+            }
+
+            input {
+                margin-top: 10px;
+                width: 50%;
+            }
+
+            .brugkode {
+                margin-top: 10px;
+                cursor: pointer;
+                width: 50%;
+                display: none;
+                background-color: $orange;
+
+                p {
+                    color: white;
+                    font-size: 12px;
+                    padding: 5px 0;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 100ms ease;
+                    }
                 }
             }
         }
