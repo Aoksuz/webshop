@@ -318,6 +318,9 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 50px; }
+  @media screen and (max-width: 768px) {
+    .infobar {
+      display: none; } }
 
 .infobar p {
   color: white;
@@ -326,7 +329,11 @@ a {
 
 /* Section - forside slider */
 .section {
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding: 0; }
+  @media screen and (max-width: 768px) {
+    .section {
+      margin-top: 0; } }
 
 .ctaplacing {
   display: flex;
@@ -364,8 +371,10 @@ a {
   width: 100%;
   /* full width */
   height: calc(100vh - 184px);
-  /* height of carousel */
-  margin-right: 10px; }
+  /* height of carousel */ }
+  @media screen and (max-width: 768px) {
+    .carousel-cell {
+      height: 500px; } }
 
 .slide {
   background-position: center;
@@ -378,7 +387,8 @@ a {
 .article {
   display: flex;
   justify-content: space-between;
-  flex-direction: row; }
+  flex-direction: row;
+  padding: 0; }
 
 .indhold {
   margin-top: 50px;
@@ -386,22 +396,41 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .indhold {
+      width: 50%; } }
 
 .articlecontainer {
   width: 100%;
   height: 730px; }
+  @media screen and (max-width: 768px) {
+    .articlecontainer {
+      height: 500px; } }
 
 .articletxt {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px 0; }
+  @media screen and (max-width: 768px) {
+    .articletxt h1 {
+      font-size: 18px; }
+    .articletxt h4 {
+      font-size: 12px; } }
 
 .kvindebox {
-  background-image: url("../images/kvindebox.png"); }
+  background-image: url("../images/kvindebox.png");
+  background-position: center; }
+  @media screen and (max-width: 768px) {
+    .kvindebox {
+      background-size: cover; } }
 
-.mændbox {
-  background-image: url("../images/mændbox.png"); }
+.menbox {
+  background-image: url("../images/mændbox.png");
+  background-position: center; }
+  @media screen and (max-width: 768px) {
+    .menbox {
+      background-size: cover; } }
 
 .articlecta {
   border: solid 3px #F2771B;
@@ -410,6 +439,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .articlecta {
+      width: 60%;
+      height: 40px; }
+      .articlecta h4 {
+        font-size: 12px; } }
 
 .articlecta:hover {
   background-color: #F2771B;
@@ -426,9 +461,13 @@ a {
   padding: 30px 0 40px; }
 
 .feedcontainer {
-  width: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .feedcontainer {
+      padding: 0;
+      justify-content: space-between; } }
 
 .blog {
   background-color: white;
@@ -440,12 +479,24 @@ a {
   justify-content: space-between;
   box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1);
   transition: 300ms ease; }
+  @media screen and (max-width: 768px) {
+    .blog {
+      width: 31%; } }
+
+.blog2 {
+  margin: 30px 2em 0; }
+  @media screen and (max-width: 768px) {
+    .blog2 {
+      margin: 30px 0 0; } }
 
 .blogbillede {
   width: 100%;
   height: 75%;
   background-position: center;
   background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .blogbillede {
+      background-size: cover; } }
 
 .blogbillede1 {
   background-image: url("../images/blogbillede1.jpg"); }
@@ -460,6 +511,9 @@ a {
   display: flex;
   justify-content: center;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .blogtext h4 {
+      font-size: 14px; } }
 
 .blogdato {
   display: flex;
@@ -480,6 +534,9 @@ a {
   width: 50%;
   display: flex;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .arrivalscontainer {
+      width: 100%; } }
 
 .nybox {
   height: 350px;
@@ -488,6 +545,10 @@ a {
   display: flex;
   flex-direction: column;
   box-shadow: 0 7px 6px rgba(0, 0, 0, 0.1); }
+  @media screen and (max-width: 768px) {
+    .nybox {
+      width: 48%;
+      height: 250px; } }
 
 .nyboxbillede {
   width: 100%;
@@ -496,10 +557,10 @@ a {
   background-size: cover; }
 
 .nybox1 {
-  background-image: url("../images/nybox1.png"); }
+  background-image: url("../images/joyride.png"); }
 
 .nybox2 {
-  background-image: url("../images/nybox2.png"); }
+  background-image: url("../images/signal.png"); }
 
 .blogtext {
   height: 15%;
@@ -509,30 +570,42 @@ a {
 
 /* footer */
 .footer {
-  background-color: #F3F3F3; }
+  background-color: #F3F3F3;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
 
 .footercontainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 30px 0;
-  height: 200px; }
+  width: 100%; }
+  @media screen and (max-width: 768px) {
+    .footercontainer {
+      flex-direction: column;
+      width: fit-content; } }
 
 .footercol {
   display: flex;
-  flex-direction: column;
-  width: 25%; }
-
-.footercol h3 {
-  line-height: 40px; }
-
-.footercol h5 {
-  line-height: 25px; }
+  flex-direction: column; }
+  .footercol h3 {
+    line-height: 40px; }
+  .footercol h5 {
+    line-height: 25px; }
+  @media screen and (max-width: 768px) {
+    .footercol {
+      margin: 0 0 20px; }
+      .footercol h3 {
+        font-size: 16px;
+        line-height: 30px; }
+      .footercol h5 {
+        font-size: 12px;
+        line-height: 20px; } }
 
 .col4 {
   display: flex;
-  justify-content: flex-start;
-  width: 25%; }
+  justify-content: flex-start; }
 
 .feather {
   margin-right: 5px; }
@@ -557,13 +630,13 @@ a {
         height: 200px;
         display: flex; }
       .kurvoverblik .kurvcontainer .kurvindhold .kurvvalg .computer .kurv1col1 {
-        background-image: url("../images/nybox22.png");
+        background-image: url("../images/signal.png");
         background-position: center;
         background-size: cover;
         width: 100px;
         height: 100px; }
       .kurvoverblik .kurvcontainer .kurvindhold .kurvvalg .computer .kurv2col1 {
-        background-image: url("../images/nybox1.png");
+        background-image: url("../images/joyride.png");
         background-position: center;
         background-size: cover;
         width: 100px;
@@ -700,13 +773,13 @@ a {
           padding: 20px 0;
           border-bottom: solid 1px gray; }
           .kurvoverblik .kurvcontainer .kurvindhold .kurvvalg .computer .kurv1col1 {
-            background-image: url("../images/nybox22.png");
+            background-image: url("../images/signal.png");
             background-position: center;
             background-size: cover;
             width: 200px;
             height: 200px; }
           .kurvoverblik .kurvcontainer .kurvindhold .kurvvalg .computer .kurv2col1 {
-            background-image: url("../images/nybox1.png");
+            background-image: url("../images/joyride.png");
             background-position: center;
             background-size: cover;
             width: 200px;

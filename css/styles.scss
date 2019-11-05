@@ -334,7 +334,7 @@ img {
 
 /* css af Abd */
 /* index */
-.infobar{
+.infobar {
     background: #F2771B;
     height: 30px;
     width: 100%;
@@ -343,14 +343,11 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-}
 
-
-    
-
-    @media  screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
+}
 
 
 .infobar p{
