@@ -633,14 +633,14 @@ a {
         background-image: url("../images/signal.png");
         background-position: center;
         background-size: cover;
-        width: 100px;
-        height: 100px; }
+        width: 200px;
+        height: 200px; }
       .kurvoverblik .kurvcontainer .kurvindhold .kurvvalg .computer .kurv2col1 {
         background-image: url("../images/joyride.png");
         background-position: center;
         background-size: cover;
-        width: 100px;
-        height: 100px; }
+        width: 200px;
+        height: 200px; }
       .kurvoverblik .kurvcontainer .kurvindhold .kurvvalg .computer .kurvcol2 {
         display: flex;
         flex-direction: column;
