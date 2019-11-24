@@ -33,7 +33,7 @@
 
     <nav class="navbar wrapper">
     <div class="logo">
-        <img src="img/logo.png">
+        <img src="img/logo.png" alt="logo">
     </div>
     <div class="search">
         <input placeholder="Søg...">
@@ -129,12 +129,60 @@
                     <input class="inputcontainer3" name="kontrolcifre">
                 </form>
 
-                <div class="betal">
+                <div id="betalknap" class="betal">
                     <h2>Betal</h2>
                 </div>
             </div>
         </div>
+
+        <div id="Modal" class="kvitteringcontainer">
+            <div class="kvitteringcontent">
+                <span class="modalclose">&times;</span>
+                <h2>Tak for din order!</h2>
+                <p style="margin: 0; color: #a0aec0; font-size: 14px;">Din order-nr: 00125475974 er bestilt</p>
+                <div class="købtvare">
+                    <h2>Kvittering</h2>
+                    <br>
+                    <table class="tablecontainer">
+                        <tr class="tabletitle">
+                            <td class="item"><h2>Produkter</h2></td>
+                            <td class="qty"><h2>Antal</h2></td>
+                            <td class="Rate"><h2>Subtotal</h2></td>
+                        </tr>
+
+                        <tr class="service">
+                            <td class="tableitem"><div class="itemtext"><h2>Nike Signal D/MS/X</h2>
+                                <p>Sko til mænd <br> Størrelse EU 44</p></div></td>
+                            <td class="tableitem"><h2 class="itemtext">1</h2></td>
+                            <td class="tableitem"><h1 class="itemtext2">kr. 1.299.95</h1></td>
+                        </tr>
+
+                        <tr class="service">
+                            <td class="tableitem"><div class="itemtext"><h2>Nike Joyride Run Flyknit</h2>
+                                <p>Sko til mænd <br> Størrelse EU 44</p></div></td>
+                            <td class="tableitem"><h2 class="itemtext">1</h2></td>
+                            <td class="tableitem"><h1 class="itemtext2">kr. 999,95</h1></td>
+                        </tr>
+                    </table>
+
+                    <table class="tablecontainer" id="table-add-on">
+                        <tr class="tableindhold">
+                            <td class="tableitem2">Fragt</td>
+                            <td class="tableitem3">GRATIS</td>
+                        </tr>
+                        <tr class="tableindhold2">
+                            <td class="tableitem4">I ALT</td>
+                            <td class="tableitem5">Kr. 2.999,9</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
     </section>
+
+
 
     <footer class="footer">
         <div class="wrapper footercontainer">
@@ -174,7 +222,24 @@
 
 <script type="text/javascript">
     $(document).ready(function (e) {
-        // Din kode her
+
+        var modal = document.getElementById("Modal");
+        var btn = document.getElementById("betalknap");
+        var span = document.getElementsByClassName("modalclose")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
     });
 </script>
 
