@@ -609,9 +609,9 @@ img {
 }
 
 .arrivalscontainer{
-    width: 50%;
+    max-width: 805px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     @media  screen and (max-width: 768px) {
         width: 100%;
@@ -620,16 +620,23 @@ img {
 
 .nybox{
     height: 350px;
-    width: 450px;
+    width: calc(805px/2 - 20px);
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 7px 6px rgba(0,0,0,0.1);
 
     @media  screen and (max-width: 768px) {
-        width: 48%;
+        width: 100%;
         height: 250px;
     }
+}
+
+.box1{
+    margin-right: 20px;
+}
+.box2{
+    margin-left: 20px;
 }
 
 .nyboxbillede{
