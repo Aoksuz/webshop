@@ -94,6 +94,7 @@ img {
     .nav-item{
         text-decoration: none;
         font-weight: 600;
+        cursor: pointer;
     }
     .nav-icons{
         width: auto;
@@ -383,6 +384,8 @@ img {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            cursor: pointer;
+
             @media screen and(max-width: 992px){
                 flex-direction: row;
                 justify-content: space-between;
