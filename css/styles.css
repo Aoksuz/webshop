@@ -78,7 +78,8 @@ a {
 
 .nav-item {
   text-decoration: none;
-  font-weight: 600; }
+  font-weight: 600;
+  cursor: pointer; }
 
 .nav-icons {
   width: auto; }
@@ -347,7 +348,8 @@ a {
 .thumbs {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  cursor: pointer; }
   @media screen and (max-width: 992px) {
     .thumbs {
       flex-direction: row;
